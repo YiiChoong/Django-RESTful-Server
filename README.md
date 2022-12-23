@@ -4,12 +4,12 @@
 
 ```
 $ git clone https://github.com/YiiChoong/RESTful-Server.git
-$ cd cd RESTful-Server/restAPI
+$ cd restAPI
 $ py -m venv venv
 $ ./venv/Scripts/activate
 $ pip install -r requirements.txt
-$ cd myproject
 $ py manage.py createsuperuser
+$ py manage.py migrate
 $ py manage.py runserver
 ```
 
@@ -36,6 +36,10 @@ https://www.postman.com/downloads/?utm_source=postman-home
 
 ### Path: **/cars/:id** &emsp; Method: **GET**
 ![image](https://user-images.githubusercontent.com/72157216/209277246-8c1053fd-0739-4aeb-8e4b-7e5b47ba424f.png)
+
+### Path: **/cars/:id** &emsp; Method: **POST**
+- Go to **Body** -> **raw** -> change to **JSON** -> create the object and **Send**
+![image](https://user-images.githubusercontent.com/72157216/209404592-a170f6c5-ea70-4c55-924e-d9da0352677c.png)
 
 ### Path: **/cars/:id** &emsp; Method: **PUT**
 - Go to **Body** -> **raw** -> change to **JSON** -> paste the object, make changes and **Send**
