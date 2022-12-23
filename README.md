@@ -4,12 +4,12 @@
 
 ```
 $ git clone https://github.com/YiiChoong/RESTful-Server.git
-$ cd cd RESTful-Server/restAPI
+$ cd restAPI
 $ py -m venv venv
 $ ./venv/Scripts/activate
 $ pip install -r requirements.txt
-$ cd myproject
 $ py manage.py createsuperuser
+$ py manage.py migrate
 $ py manage.py runserver
 ```
 
